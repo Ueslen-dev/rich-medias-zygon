@@ -1,46 +1,34 @@
   body, html{
     margin: 0px;
     padding: 0px;
-    width: 320px;
-    height: 480px;
     overflow: hidden;
   }
-  #container{
+  .wrapper{
     width: 320px;
     height: 480px;
   }
-  #normal, #normalCta{   
-    width: 320px;
-    height: 480px;
-    cursor: pointer;
-    background-repeat: no-repeat;
+ .bannerButton, .ctaButton {
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+ }
+ .ctaButton {
+    position: absolute;
+ }
+ .remove {
+  display: none;
+ }
+ .visible {
+    display: block;
   }
-  #normal{background-image: url('../img/f1.jpg');}
-  #normalCta{background-image: url('../img/f1-cta.png'); position: absolute; top: 0; left: 0; z-index: 1;  -webkit-animation-name: pulse;
-  animation-name: pulse;}
-  #expanded{    
-    display: none;
+  .map, .iframeMap {
     width: 320px;
-    height: 480px !important;
-  }
-  #ctaExpanded{
-    width: 320px;
-    height: 76px !important;
-    background-image: url('../img/f2-cta.png');
-    background-repeat: no-repeat;
-    position: relative;
-    top: -16px;
-    cursor: pointer;
+    height: 402px;
   }
   .map{
-    width: 320px;
-    height: 420px;
     margin: 0;    
-    background-color: rgba(255, 255, 255, 0.5);
   }
-  .i-map{
-    width: 320px;
-    height: 420px;
+  .iframeMap{
     border-width: 0px !important;
   } 
   
