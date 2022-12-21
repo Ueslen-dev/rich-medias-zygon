@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Rich media - Click Point</title>
+</head>
+<body>
+  <main class="wrapper">
+    <div class="initialFrame animate__animated animate__bounceIn">
+      <img src="./img/frame1.png" alt="tela inicial">
+    </div>
+    <section>
+      <div>
+        <div class="pointGroup1">
+          <button class="point" onclick="handlePoint(1)">button 1</button>
+          <span id="badge1" class="badge animate__animated animate__fadeOutDown animate__delay-3s">Produto 1 R$ 50,00</span>
+        </div>
+        <div class="pointGroup2">
+          <button class="point" onclick="handlePoint(2)">button 2</button>
+          <span id="badge2" class="badge animate__animated animate__fadeOutDown animate__delay-3s">Produto 1 R$ 50,00</span>
+        </div>
+        <div class="pointGroup3">
+          <button class="point" onclick="handlePoint(3)">button 3</button>
+          <span id="badge3" class="badge animate__animated animate__fadeOutDown animate__delay-3s">Produto 1 R$ 50,00</span>
+        </div>
+        <img src="./img/banner.png" alt="banner">
+      </div>
+    </section>
+  </main>
+
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

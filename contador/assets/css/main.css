@@ -1,0 +1,127 @@
+body{
+	font-family: 'Cairo', sans-serif;
+	font-weight: 700;	
+}
+
+.main {
+	float: left;
+	top:0px;
+	left: 0px;
+	height: 480px;
+	width: 320px;
+	position: absolute;
+}
+
+.normal {
+	position: absolute;
+	top:0px;
+	left: 0px;
+	height: 250px;
+	width: 300px;
+	z-index: 1000;
+}
+
+.expanded {
+	float: left;
+	top:0px;
+	left: 0px;
+	position: absolute;
+	height: 480px;
+	width: 320px;
+	z-index: 1001;
+	display: none;
+	animation-name: opc;
+	animation-duration: 1.0s;
+}
+
+.count0{
+	position:absolute;
+	margin-top:54px;
+	margin-left:59px;
+	z-index: 1003;
+}
+
+.count1{
+	position:absolute;
+	margin-top:54px;
+	margin-left:158px;
+	z-index: 1003;
+}
+
+#hr{
+	font-size: 35px;
+	color:white;
+	position:absolute;	
+	margin-top:241px;
+	margin-left:73px;
+}
+
+#min{
+	font-size: 35px;
+	color:white;
+	position:absolute;	
+	margin-top:241px;
+	margin-left:147px;
+}
+
+#sec{
+	font-size: 35px;
+	color:white;
+	position:absolute;
+	margin-top:241px;
+	margin-left:217px;	
+}
+
+#hora-s{
+	font-size: 19px;
+	font-weight: 400;
+	color:white;
+	position:absolute;	
+	margin-top:283px;
+	margin-left:68px;
+}
+
+#min-s{
+	font-size: 19px;
+	font-weight: 400;
+	color:white;
+	position:absolute;
+	margin-top:283px;
+	margin-left:151px;
+}
+
+#sec-s{
+	font-size: 19px;
+	font-weight: 400;
+	color:white;
+	position:absolute;	
+	margin-top:283px;
+	margin-left:222px;
+}
+
+#txt-f{
+	font-size: 32px;
+	font-weight: 400;
+	color:white;
+	position:absolute;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#txt-d-s{
+	font-size: 32px;
+	font-weight: 400;
+	color:white;
+	position:absolute;
+	margin-top: 195px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+@keyframes opc {
+	from {opacity:0;}
+	to {opacity: 1;}
+}

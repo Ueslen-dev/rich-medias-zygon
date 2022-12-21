@@ -1,0 +1,57 @@
+body, html, * {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 320px;
+    height: 480px;
+}
+.visible {
+    display: block;
+}
+.remove {
+    display: none;
+}
+.initialFrame {
+    position: absolute;
+    opacity: 0.9 !important;
+    z-index: 9;
+}
+.point {
+    border: 1px solid #fff;
+    background: red;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 0;
+    cursor: pointer;
+}
+.badge {
+    border-radius: 5%;
+    background: red;
+    padding: 10px;
+    opacity: 0.8;
+    top: 30px;
+    left: 20px;
+    font-weight: 600;
+}
+.pointGroup1 {
+    position: absolute;
+    top: 170px;
+    left: 50px;
+}
+.pointGroup2 {
+    position: absolute;
+    top: 280px;
+    left: 100px;
+}
+.pointGroup3 {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+#badge3 {
+    margin-left: -175px;
+}
+
+

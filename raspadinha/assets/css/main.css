@@ -1,0 +1,249 @@
+body, html{
+	margin: 0px;
+	padding: 0px;
+	height: 480px;
+	width: 320px;
+}
+.container {  
+  position: relative;
+  width: 320px;
+  height: 480px;
+  margin: 0 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  -o-user-select: none;
+  user-select: none;
+}
+.canvas {
+  position:absolute;  
+}
+.btn{
+  cursor: pointer;
+  /*position: absolute;*/
+  /*z-index: 9;*/
+}
+#js-canvas{
+ /*position: relative;*/
+  /*z-index: 99;*/
+}
+#main{
+	background-image: url("../img/bg.png");
+	height: 480px;
+	width: 320px;
+   /*position: relative;*/
+  /*z-index: 99;*/
+}
+body, html{
+  margin: 0px;
+  padding: 0px;
+  width: 320px;
+  height: 480px;
+  overflow: hidden;
+}
+#container{
+  width: 320px;
+  height: 480px;
+}
+.btn-close{    
+  float: right;    
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 50%;
+  font-size: 13px;
+  color: red;
+  height: 15px;
+  width: 15px;    
+  margin-top: -100px;
+  margin-right: 3px;
+}
+#normal{   
+  width: 320px;
+  height: 480px;
+  cursor: pointer;
+  background-image: url('../img/bg.png');
+  background-repeat: no-repeat;   
+}
+#expanded{    
+  display: none;
+  width: 320px;
+  height: 480px !important;
+  background-image: url('../img/bg-map.png');
+  background-repeat: no-repeat;
+  animation-name: opc;
+  animation-duration: 2s;
+  padding: 103px 0px 0px 0px;
+  top:0;
+}
+@keyframes opc {
+  from {opacity:0;}
+  to {opacity: 1;}    
+}
+#title{ 
+  position: absolute;
+  width: 320px;
+  height: 480px ; 
+  background-image: url('../img/title.png');
+  background-repeat: no-repeat;  
+  animation: inOut 2s infinite;  
+} 
+#txt{ 
+  position: absolute;
+  width: 320px;
+  height: 480px ; 
+  background-image: url('../img/txt.png');
+  background-repeat: no-repeat;  
+  animation: zoom 5s infinite;
+  /*z-index: 9;*/
+} 
+#mao{ 
+  position: absolute;
+  width: 320px;
+  height: 480px ; 
+  background-image: url('../img/hand.png');
+  background-repeat: no-repeat; 
+  animation: zoom 2s infinite;      
+}
+#desc { 
+  position: absolute;
+  width: 320px;
+  height: 480px ; 
+  background-image: url('../img/desc.png');
+  background-repeat: no-repeat;  
+  animation: slideIn 4s infinite;
+}
+@-webkit-keyframes zoom {
+  0% {
+    transform: scale(.95);
+    opacity: .7;
+  }
+  50%{
+    transform: scale(1.0);
+    opacity: .9;
+  }
+  100% {
+    transform: scale(.95);
+    opacity: .7;
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(.95);
+    opacity: .7;
+  }
+  50%{
+    transform: scale(1.0);
+    opacity: .9;
+  }
+  100% {
+    transform: scale(.95);
+    opacity: .7;
+  }
+}
+@-webkit-keyframes inOut {
+ 0% {     
+  opacity: .5;
+}
+50%{     
+  opacity: .8;
+}
+100% {      
+  opacity: .5;
+}
+}
+@keyframes inOut {
+  0% {     
+    opacity: .5;
+  }
+  50%{     
+    opacity: .8;
+  }
+  100% {      
+    opacity: .5;
+  }
+}
+@keyframes slideIn  {
+  0%   {    
+    transform: translateX(-5px);
+  } 
+  50%  {
+    transform: translateX(5px);     
+  }
+  100% {    
+    transform: translateX(-5px);
+  }
+}
+
+@-webkit-keyframes slideIn {
+ 0%   {    
+  transform: translateX(-5px);
+} 
+50%  {
+  transform: translateX(5px);     
+}
+100% {    
+  transform: translateX(-5px);
+}
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    transform: scale(.8);
+    opacity: .7;
+  }
+  100%{
+    transform: scale(1.0);
+    opacity: .9;
+  }  
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(.8);
+    opacity: .7;
+  }
+  100%{
+    transform: scale(1.0);
+    opacity: .9;
+  }  
+}
+@-webkit-keyframes slideInR {
+  0% {
+   transform: translateX(2px); 
+   opacity: .8;
+ }
+ 100%{
+  transform: translateX(0px); 
+  opacity: 1;
+}
+}
+@keyframes slideInR {
+  0% {
+    transform: translateX(2px); 
+    opacity: .8;
+  }
+  100%{
+   transform: translateX(0px); 
+   opacity: 1;
+ }
+}
+@-webkit-keyframes slideInL {
+  0% {
+   transform: translateX(-2px); 
+   opacity: .8;
+ }
+ 100%{
+  transform: translateX(0px); 
+  opacity: 1;
+}
+}
+@keyframes slideInL {
+  0% {
+    transform: translateX(-2px); 
+    opacity: .8;
+  }
+  100%{
+   transform: translateX(0px); 
+   opacity: 1;
+ }
+}

@@ -1,0 +1,35 @@
+body, html, * {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 320px;
+    height: 480px;
+    border: 1px solid #333;
+}
+.buttonResponse {
+    width: 250px;
+    height: 33px;
+    position: absolute;
+    border: none;
+    left: 32px;
+    cursor: pointer;
+    background: none;
+    font-size: 0;
+    z-index: 9;
+}
+#response1 {
+    top: 189px;
+}
+#response2 {
+    top: 241px;
+}
+#response3 {
+    top: 293px;
+}
+.wrongAnswer {
+    border: 2px solid red;
+}
+.remove {
+    display: none;
+}

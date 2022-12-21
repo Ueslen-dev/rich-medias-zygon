@@ -8,44 +8,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Rich media - Quiz</title>
-    <style>
-        body, html, * {
-            margin: 0;
-            padding: 0;
-        }
-        .wrapper {
-            width: 320px;
-            height: 480px;
-            border: 1px solid #333;
-        }
-        .buttonResponse {
-            width: 250px;
-            height: 33px;
-            position: absolute;
-            border: none;
-            left: 32px;
-            cursor: pointer;
-            background: none;
-            font-size: 0;
-            z-index: 9;
-        }
-        #response1 {
-            top: 189px;
-        }
-        #response2 {
-            top: 241px;
-        }
-        #response3 {
-            top: 293px;
-        }
-        .wrongAnswer {
-            border: 2px solid red;
-        }
-        .remove {
-            display: none;
-        }
-    </style>
 </head>
 <body>
     <main class="wrapper">
@@ -54,76 +18,11 @@
             <button id="response2" class="buttonResponse" onclick="handleQuiz(2)">resposta</button>
             <button id="response3" class="buttonResponse" onclick="handleQuiz(3)">resposta</button>
         </div>
-        <a id="linkImage" target="_blank">
-            <img id="banner" src="./assets/img1.png" alt="imagem com caixinhas de resposta">
+        <a id="linkImage" target="_blank" href="https://zygon.digital/">
+            <img id="banner" src="./assets/img/img1.png" alt="imagem com caixinhas de resposta">
         </a>
     </main>
 
-    <script type="text/javascript">
-        let index = 1
-        let currentQuiz = `quiz${index}`
-
-        const quizs = {
-            quiz1: [
-                {
-                    id: 1,
-                    isCorrectAnswer: false,
-                },
-                {
-                    id: 2,
-                    isCorrectAnswer: false,
-                },
-                {
-                    id: 3,
-                    isCorrectAnswer: true,
-                }
-            ],
-            quiz2: [
-                {
-                    id: 1,
-                    isCorrectAnswer: false,
-                },
-                {
-                    id: 2,
-                    isCorrectAnswer: true,
-                },
-                {
-                    id: 3,
-                    isCorrectAnswer: false,
-                }
-            ]
-        }
-
-        const handleQuiz = (id) => {
-            const currentButtonResponse = document.getElementById(`response${id}`)
-            const banner = document.getElementById('banner')
-            const linkImage = document.getElementById('linkImage')
-            const buttonsGroup = document.getElementById('buttonsGroup')
-
-            const findCorrectAnswer = quizs[currentQuiz]?.find((quiz) => {
-                return quiz.id === id
-            }).isCorrectAnswer
-
-            if(!findCorrectAnswer) {
-              currentButtonResponse.classList.add('wrongAnswer', 'animate__animated', 'animate__shakeX')
-                return setTimeout(() => {
-                    currentButtonResponse.classList.remove('wrongAnswer', 'animate__animated', 'animate__shakeX')
-                }, 500)
-            }
-
-            index = index + 1
-            currentQuiz = `quiz${index}`
-
-            if(!quizs[currentQuiz]) { 
-              linkImage.setAttribute('href', 'https://zygon.digital/')
-              buttonsGroup.classList.add('remove')
-
-              return banner.setAttribute('src', `./assets/final.png`)
-            }
-
-            banner.setAttribute('src', `./assets/img${index}.png`)
-            banner.classList.add('animate__animated', 'animate__flipInX')
-        }
-    </script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
