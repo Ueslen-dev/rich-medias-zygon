@@ -44,16 +44,19 @@ const countdownExecute = setInterval(() => {
 	countdownLabel.innerHTML = 'FALTA'
 	daysLabel.innerHTML = 'Dia'
   }
+
   if(hoursMiliseconds <= 1) {
 	hoursLabel.innerHTML = 'Hora'
   }
+
   if(minutesMiliseconds <= 1) {
 	minutesLabel.innerHTML = 'Minuto'
   }
+
   if(secondsMiliseconds <= 1) {
 	secondsLabel.innerHTML = 'Segundo'
   }
-
+  
   if (distance <= 0) {
     clearInterval(countdownExecute);
 
