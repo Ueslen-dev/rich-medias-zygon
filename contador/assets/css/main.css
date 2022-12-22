@@ -1,127 +1,45 @@
-body{
-	font-family: 'Cairo', sans-serif;
-	font-weight: 700;	
+body, html, * {
+	margin: 0;
+	padding: 0;
 }
-
-.main {
-	float: left;
-	top:0px;
-	left: 0px;
-	height: 480px;
+body {
 	width: 320px;
-	position: absolute;
-}
-
-.normal {
-	position: absolute;
-	top:0px;
-	left: 0px;
-	height: 250px;
-	width: 300px;
-	z-index: 1000;
-}
-
-.expanded {
-	float: left;
-	top:0px;
-	left: 0px;
-	position: absolute;
 	height: 480px;
+}
+.wrapper {
+	background: url('../img/banner.png');
+	background-repeat: no-repeat;
 	width: 320px;
-	z-index: 1001;
-	display: none;
-	animation-name: opc;
-	animation-duration: 1.0s;
+	height: 480px;
+	border: none;
+	cursor: pointer;
 }
-
-.count0{
-	position:absolute;
-	margin-top:54px;
-	margin-left:59px;
-	z-index: 1003;
+.container {
+	height: 480px;
 }
-
-.count1{
-	position:absolute;
-	margin-top:54px;
-	margin-left:158px;
-	z-index: 1003;
+#countdownLabel {
+	margin-top: 20px;
+	font-size: 50px;
 }
-
-#hr{
-	font-size: 35px;
-	color:white;
-	position:absolute;	
-	margin-top:241px;
-	margin-left:73px;
+#daysGroup {
+	font-size: 70px;
+	margin-top: 50px;
+	color: #fff;
+	font-weight: 600;
 }
-
-#min{
-	font-size: 35px;
-	color:white;
-	position:absolute;	
-	margin-top:241px;
-	margin-left:147px;
+#daysLabel {
+	font-size: 25px;
+	margin-top: 10px;
+	color: #333;
 }
-
-#sec{
-	font-size: 35px;
-	color:white;
-	position:absolute;
-	margin-top:241px;
-	margin-left:217px;	
+.countdown {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	font-size: 20px;
+	margin-top: 15px;
 }
-
-#hora-s{
-	font-size: 19px;
-	font-weight: 400;
-	color:white;
-	position:absolute;	
-	margin-top:283px;
-	margin-left:68px;
-}
-
-#min-s{
-	font-size: 19px;
-	font-weight: 400;
-	color:white;
-	position:absolute;
-	margin-top:283px;
-	margin-left:151px;
-}
-
-#sec-s{
-	font-size: 19px;
-	font-weight: 400;
-	color:white;
-	position:absolute;	
-	margin-top:283px;
-	margin-left:222px;
-}
-
-#txt-f{
-	font-size: 32px;
-	font-weight: 400;
-	color:white;
-	position:absolute;
-	margin-top: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-
-#txt-d-s{
-	font-size: 32px;
-	font-weight: 400;
-	color:white;
-	position:absolute;
-	margin-top: 195px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-
-@keyframes opc {
-	from {opacity:0;}
-	to {opacity: 1;}
+#hoursLabel, #minutesLabel, #secondsLabel {
+	font-size: 14px;
+	margin-top: 8px;
 }

@@ -6,26 +6,29 @@
 	<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
 </head>
 <body>
-	<div id="main" class="main">
-		<div id="normal" class="normal">
-		<a onclick="javascript:expand();" href="#"><img src="assets/img/1.gif"></a>
-		</div>
-		<div id="expanded" class="expanded">	
-		<a href="http://www.semanasebrae.com.br/?utm_source=richmedia_zygon&utm_medium=richmedia_zygon&utm_campaign=richmedia_zygon&utm_term=richmedia_zygon&utm_content=richmedia_zygon">
-		<center><p id="txt-f"></p></center>
-		<img id="count0" class="count0" src="">
-		<img id="count1" class="count1" src="">		
-		<center><p id="txt-d-s"></p></center>
-		<p id="hr">00</p>	
-		<p id="hora-s">hora</p>
-		<p id="min-s">min</p>
-		<p id="sec-s">seg</p>
-		<p id="min">00</p>	
-		<p id="sec">00</p>
-		<img id="bg" src="assets/img/2.jpg">		
-		</a>		
-		</div>	
-	</div>	
+	<button class="wrapper" onclick="callToAction()">
+		<main class="container">
+			<section id="countdownLabel">FALTAM</section>
+			<section id="daysGroup">
+				<span id="days">00</span>
+				<div id="daysLabel">DIAS</div>
+			</section>
+			<section class="countdown">
+				<article>
+					<span id="hours">00</span>
+					<div id="hoursLabel">Horas</div>
+				</article>
+				<article>
+					<span id="minutes">00</span>
+					<div id="minutesLabel">Minutos</div>
+				</article>
+				<article>
+					<span id="seconds">00</span>
+					<div id="secondsLabel">Segundos</div>
+				</article>
+			</section>
+		</main>
+	</button>	
 	<script type="text/javascript" src="assets/js/main.js"></script>	
 </body>
 </html>
