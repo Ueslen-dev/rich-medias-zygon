@@ -1,0 +1,20 @@
+.wrapper {
+    text-align: center;
+    font-family: sans-serif;
+}
+.linksGroup {
+    margin-top: 100px;
+}
+.links {
+    text-decoration: none;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.links:hover {
+    transition: 0.5s;
+    background: #ddd;
+    color: #333;
+}

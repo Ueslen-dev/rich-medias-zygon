@@ -13,7 +13,7 @@ const months = {
 	december: 'Dec'
 }
 
-const countDownDate = new Date(`${months.december} 31, 2022 21:28:00`).getTime();
+const countDownDate = new Date(`${months.january} 1, 2023 21:28:00`).getTime();
 
 const countdownExecute = setInterval(() => {
   const currentDate = new Date().getTime();
