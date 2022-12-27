@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	width: 320px;
+	height: 480px;
+}
+#puzzle{
+	width: 320px;
+	height: 480px;
+	border: none;	
+}
+.parts{
+	width: 106px;
+	height: 240px;	
+	float: left;
+}
+.parts1{
+	background: url('../img/1.jpg') no-repeat;
+}
+.parts2{
+	background: url('../img/2.jpg') no-repeat;
+}
+.parts3{
+	background: url('../img/3.jpg') no-repeat;
+}
+.parts4{
+	background: url('../img/4.jpg') no-repeat;
+}
+.parts5{
+	background: url('../img/5.jpg') no-repeat;
+}
+.parts6{
+	background: url('../img/6.jpg') no-repeat;
+}
+.parts7{
+	background: url('../img/7.jpg') no-repeat;
+}
+.parts8{
+	background: url('../img/8.jpg') no-repeat;
+}
+.partsNOT{
+	width: 106px;
+	height: 240px;
+	float: left;
+}
+@-webkit-keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+#end{
+	width: 320px;
+	height: 480px;
+	border: none;
+	background: url('../img/end.jpg') no-repeat;
+	display: none;
+	-webkit-animation: fadeIn 3s;
+	animation: fadeIn 3s;
+}
