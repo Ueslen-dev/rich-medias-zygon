@@ -3,23 +3,23 @@
   'use strict';
   
   var isDrawing, lastPoint;
-  var container    = document.getElementById('js-container'),
-      canvas       = document.getElementById('js-canvas'),
+  var canvas       = document.getElementById('js-canvas'),
       canvasWidth  = canvas.width,
       canvasHeight = canvas.height,
       ctx          = canvas.getContext('2d'),
       image        = new Image(),
-      brush        = new Image();
+      brush        = new Image(),
+      bannerButton = document.getElementById('main');
     
-  image.src = 'assets/img/inicial.png';
+  image.src = 'assets/img/initial.png';
   image.onload = function() {
     ctx.drawImage(image, 0, 0);
       
-    document.getElementById('main').style.display = 'block';
-    document.getElementById('others').style.display = 'block';
-    // document.getElementById('others').style.zIndex = "99";
+    bannerButton.style.display = 'block';
+    bannerButton.addEventListener('click', redirectToPage)
   };
-  brush.src = 'assets/img/util.png';
+
+  brush.src = 'assets/img/brush.png';
   canvas.addEventListener('mousedown', handleMouseDown, false);
   canvas.addEventListener('touchstart', handleMouseDown, false);
   canvas.addEventListener('mousemove', handleMouseMove, false);
@@ -71,7 +71,6 @@
   
   function handlePercentage(filledInPixels) {
     filledInPixels = filledInPixels || 0;
-    // console.log(filledInPixels + '%');
     if (filledInPixels > 20) {
       canvas.parentNode.removeChild(canvas);
     }
@@ -105,6 +104,10 @@
 
   function handleMouseUp(e) {
     isDrawing = false;
+  }
+
+  function redirectToPage() {
+    return window.open('https://zygon.digital/')
   }
   
 })();

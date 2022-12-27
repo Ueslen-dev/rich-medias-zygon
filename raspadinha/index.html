@@ -3,41 +3,25 @@
 <head>
 	<title>Banner</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>	
-  <div class="container" id="js-container">	
-    
-    <div  style="display: none;" id="others">      
-      <a class="btn" onclick="clickCTA();"><div id="txt"></div></a>     
-    </div> 
-
+  <main class="wrapper" id="js-container">	
     <canvas class="canvas" id="js-canvas" width="320" height="480"></canvas>
 
-    <div style="display: none;" id="main"></div> 
-    </div>
+    <button style="display: none;" id="main">
+      <div class="container">
+        <figure class="animate__animated animate__pulse animate__infinite">
+          <img src="./assets/img/fragment.png" alt="fragmento do banner">
+        </figure>
+      </div>
+    </button> 
+  </main>
 
   <script type="text/javascript" src="assets/js/main.js"></script>
-  <script type="text/javascript">
-    var link;
-    var ct = "http://www.zeferinas.com.br/?utm_source=rm_zygon&utm_medium=rm_zygon";
-    function getParameterByName(name, url) {
-      if (!url) url = window.location.href;
-      name = name.replace(/[\[\]]/g, "\\$&");
-      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-      results = regex.exec(url);
-      if (!results) return null;
-      if (!results[2]) return '';
-      return decodeURIComponent(results[2].replace(/\+/g, " "));
-    }
-    function clickCTA(){
-      var link = getParameterByName('clicktag');
-      if(link == null){
-        link = ct;
-      }
-      window.open(link, '_blank');  
-    }
-  </script>
-
 </body>
 </html>
