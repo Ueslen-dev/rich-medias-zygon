@@ -120,6 +120,6 @@ const shareImage = async () => {
     }
 }
 
-// share.onclick = shareImage
+share.onclick = shareImage
 
 getCameraSelection();
