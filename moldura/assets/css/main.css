@@ -10,8 +10,8 @@ figure {
 }
 .video, .canvas {
     position: absolute;
-    width: 163px;
-    height: 290px;
+    /* width: 163px;
+    height: 290px; */
 }
 .video {
     left: 79px;
