@@ -28,81 +28,81 @@ function positionParts(){
 
 function moveParts(){ 
 	$('#part0').on('click', function(){
-		if(parts[1]==0){
-			parts[1]=parts[0];
-			parts[0]=0;
-		}else if(parts[3]==0){
-			parts[3]=parts[0];
-			parts[0]=0;
+		if(parts[1] === 0){
+			parts[1] = parts[0];
+			parts[0] = 0;
+		}else if(parts[3] === 0){
+			parts[3] = parts[0];
+			parts[0] = 0;
 		}
 		positionParts();
 	})
 	$('#part1').on('click', function(){
-		if(parts[0]==0){
-			parts[0]=parts[1];
-			parts[1]=0;
-		}else if(parts[2]==0){
-			parts[2]=parts[1];
-			parts[1]=0;
-		}else if(parts[4]==0){
-			parts[4]=parts[1];
-			parts[1]=0;
+		if(parts[0] === 0){
+			parts[0] = parts[1];
+			parts[1] = 0;
+		}else if(parts[2] === 0){
+			parts[2] = parts[1];
+			parts[1] = 0;
+		}else if(parts[4] === 0){
+			parts[4] = parts[1];
+			parts[1] = 0;
 		}
 
 		positionParts();
 	})
 	$('#part2').on('click', function(){
-		if(parts[1]==0){
-			parts[1]=parts[2];
-			parts[2]=0;
-		}else if(parts[5]==0){
-			parts[5]=parts[2];
-			parts[2]=0;
+		if(parts[1] === 0){
+			parts[1] = parts[2];
+			parts[2] = 0;
+		}else if(parts[5] === 0){
+			parts[5] = parts[2];
+			parts[2] = 0;
 		}
 
 		positionParts();
 	})
 	$('#part3').on('click', function(){
-		if(parts[0]==0){
-			parts[0]=parts[3];
-			parts[3]=0;
-		}else if(parts[4]==0){
-			parts[4]=parts[3];
-			parts[3]=0;
-		}else if(parts[6]==0){
-			parts[6]=parts[3];
-			parts[3]=0;
+		if(parts[0] === 0){
+			parts[0] = parts[3];
+			parts[3] = 0;
+		}else if(parts[4] === 0){
+			parts[4] = parts[3];
+			parts[3] = 0;
+		}else if(parts[6] === 0){
+			parts[6] = parts[3];
+			parts[3] = 0;
 		}
 
 		positionParts();
 	})
 	$('#part4').on('click', function(){
-		if(parts[1]==0){
-			parts[1]=parts[4];
-			parts[4]=0;
-		}else if(parts[3]==0){
-			parts[3]=parts[4];
-			parts[4]=0;
-		}else if(parts[5]==0){
-			parts[5]=parts[4];
-			parts[4]=0;
-		}else if(parts[7]==0){
-			parts[7]=parts[4];
-			parts[4]=0;
+		if(parts[1] === 0){
+			parts[1] = parts[4];
+			parts[4] = 0;
+		}else if(parts[3] === 0){
+			parts[3] = parts[4];
+			parts[4] = 0;
+		}else if(parts[5] === 0){
+			parts[5] = parts[4];
+			parts[4] = 0;
+		}else if(parts[7] === 0){
+			parts[7] = parts[4];
+			parts[4] = 0;
 		}
 
 		positionParts();
 	})
 	$('#part5').on('click', function(){
-		if(parts[2]==0){
-			parts[2]=parts[5];
-			parts[5]=0;
-		}else if(parts[4]==0){
-			parts[4]=parts[5];
-			parts[5]=0;
-		}else if(parts[8]==0){
-			parts[8]=parts[5];
-			parts[5]=0;
+		if(parts[2] === 0){
+			parts[2] = parts[5];
+			parts[5] = 0;
+		}else if(parts[4] === 0){
+			parts[4] = parts[5];
+			parts[5] = 0;
+		}else if(parts[8] === 0){
+			parts[8] = parts[5];
+			parts[5] = 0;
 		}
 		
 		positionParts();
