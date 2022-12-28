@@ -31,9 +31,13 @@ figure {
     margin: 0 auto;
     text-align: center;
 }
-.not-image {
+.screenshot-image {
     position: relative;
     top: 100px;
+}
+.screenshot-image img {
+    width: 163px;
+    height: 290px;
 }
 .video-options {
     position: relative;
