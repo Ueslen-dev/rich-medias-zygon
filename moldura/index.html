@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>Rich media - Moldura</title>
+    <script type="text/javascript" src="./assets/js/html2canvas.min.js"></script>
 </head>
 <body>
     <main class="wrapper">
         <section class="container">
             <video autoplay class="video"></video>
-            <canvas class="remove canvas"></canvas>
+            <canvas class="canvas remove"></canvas>
+
             <figure class="screenshot-image">
                 <img src="./assets/img/not-image.png" alt="sem imagem">
             </figure>
-
+      
             <section class="video-options remove">
                 <select name="camera" id="" class="custom-select">
                     <option value="">Selecione a câmera</option>
@@ -38,7 +40,6 @@
             </section>
         </section>
     </main>
-
     <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 </html>

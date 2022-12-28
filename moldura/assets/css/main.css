@@ -10,16 +10,13 @@ figure {
 }
 .video, .canvas {
     position: absolute;
-    width: 163px;
-    height: 290px;
+    width: 145px;
+    height: 258px;
 }
 .video {
-    left: 79px;
-    top: 100px;
+    left: 86px;
+    top: 126px;
     z-index: 1;
-}
-.canvas {
-    border: 1px solid green;
 }
 .wrapper {
     width: 320px;
@@ -32,12 +29,19 @@ figure {
     text-align: center;
 }
 .screenshot-image {
-    position: relative;
-    top: 100px;
+    position: relative;    
+    background: url('../img/moldura.png');
+    background-repeat: no-repeat;
+    width: 179px;
+    height: 330px;
+    left: 50px;
+    top: 75px;
 }
 .screenshot-image img {
-    width: 163px;
-    height: 290px;
+    width: 145px;
+    height: 258px;
+    position: relative;
+    top: 59px;
 }
 .video-options {
     position: relative;
@@ -52,7 +56,7 @@ figure {
 }
 .video-controlls {
     position: relative;
-    top: 120px;
+    top: 85px;
     display: flex;
     justify-content: center;
     gap: 15px;
