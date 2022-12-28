@@ -11,14 +11,14 @@ const [play, pause, screenshot, share] = buttons;
 const constraints = {
   video: {
     width: {
-      min: 234,
-      ideal: 234,
-      max: 234,
+      min: 163,
+      ideal: 163,
+      max: 163,
     },
     height: {
-      min: 131,
-      ideal: 131,
-      max: 131
+      min: 290,
+      ideal: 290,
+      max: 290,
     },
   }
 };
@@ -119,6 +119,6 @@ const shareImage = async () => {
     }
 }
 
-share.onclick = shareImage
+// share.onclick = shareImage
 
 getCameraSelection();

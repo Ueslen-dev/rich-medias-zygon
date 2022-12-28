@@ -10,14 +10,13 @@ figure {
 }
 .video, .canvas {
     position: absolute;
+    width: 163px;
+    height: 290px;
 }
 .video {
-    /* border: 1px solid red; */
-    left: 43px;
+    left: 79px;
     top: 100px;
     z-index: 1;
-    width: 234px;
-    height: 131px;
 }
 .canvas {
     border: 1px solid green;
@@ -49,14 +48,18 @@ figure {
 }
 .video-controlls {
     position: relative;
-    top: 165px;
+    top: 120px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
 }
 .video-controlls button {
     border: 0;
     background: transparent;
     cursor: pointer;
+}
+.video-controlls button img {
+    width: 80%;
 }
 .remove {
     display: none;
