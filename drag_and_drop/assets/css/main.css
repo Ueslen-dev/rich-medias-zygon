@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body, html {
+   margin: 0;
+   padding: 0;
+   width: 320px;
+   height: 480px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+    position: absolute;
+    width: 320px;
+    height: 480px;
+    background: url('../img/bg.png')
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  boder: 1px solid red;
+}
+
+.remove {
+    display: none;
+}
+
+.opacity {
+  opacity: 0.8;
+}
+
+.title {
+  position: relative;
+  top: 30px;
+}
+
+.title img {
+  height: 80px;
+}
+
+.end-banner {
+  position: absolute;
+  display: none;
+  width: 320px;
+  height: 480px;
+  background: url('../img/end.png');
+  z-index: 1;
+  animation: fadeIn .6s ease-in both;
+}
+
+.drag-area {
+  height: 165px;
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 100px -5px;
+  width: 290px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-image: url(../img/toy.png);
+}
+.teste {
+  margin-left: 55px;
+  width: 210px;
+  height: 280px;
+}
+
+.fill-group {
+    position: fixed;
+    display: flex;
+    top: 400px;;
+    left: 22px;
+}
+  
+.fill img {
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+}
+
+.level-1 {
+    height: 207px;
+}
+
+.level-2 {
+      height: 249px;
+}
+
+.level-3 {
+      height: 291px;
+}
+
+.level-4 {
+    height: 333px;
+}
+
+.level-5 {
+    height: 375px;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: .9;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: .9;
+  }
+}
