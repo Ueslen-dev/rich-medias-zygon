@@ -47,11 +47,14 @@ body, html, * {
 }
 .pointGroup3 {
     position: absolute;
-    top: 400px;
+    top: 370px;
     left: 200px;
 }
 #badge3 {
     margin-left: -175px;
 }
-
+.cta {
+    position: relative;
+    top: -52px;
+}
 

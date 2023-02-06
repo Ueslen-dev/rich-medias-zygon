@@ -13,7 +13,7 @@ const months = {
 	december: 'Dec'
 }
 
-const countDownDate = new Date(`${months.january} 1, 2023 21:28:00`).getTime();
+const countDownDate = new Date(`${months.may} 17, 2023 17:28:00`).getTime();
 
 const countdownExecute = setInterval(() => {
   const currentDate = new Date().getTime();
@@ -60,11 +60,11 @@ const countdownExecute = setInterval(() => {
   if (distance <= 0) {
     clearInterval(countdownExecute);
 
-	countdownLabel.innerHTML = 'ACABOU!'
-	numberOfDays.innerHTML = '00'
-	numberOfHours.innerHTML = '00'
-	numberOfMinutes.innerHTML = '00'
-	numberOfSeconds.innerHTML = '00'
+    countdownLabel.innerHTML = 'ACABOU!'
+    numberOfDays.innerHTML = '00'
+    numberOfHours.innerHTML = '00'
+    numberOfMinutes.innerHTML = '00'
+    numberOfSeconds.innerHTML = '00'
   }
 }, 1000);
 

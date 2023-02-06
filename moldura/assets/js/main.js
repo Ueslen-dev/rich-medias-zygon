@@ -25,6 +25,18 @@ const constraints = {
   }
 };
 
+const handleStream = (stream) => {
+  video.srcObject = stream;
+  play.classList.add('remove');
+  pause.classList.remove('remove');
+  screenshot.classList.remove('remove');
+};
+
+const startStream = async (constraints) => {
+  const stream = await navigator.mediaDevices.getUserMedia(constraints);
+  handleStream(stream);
+};
+
 cameraOptions.onchange = () => {
   const updatedConstraints = {
     ...constraints,
@@ -78,19 +90,6 @@ const doScreenshot = () => {
 
 pause.onclick = pauseStream;
 screenshot.onclick = doScreenshot;
-
-const startStream = async (constraints) => {
-  const stream = await navigator.mediaDevices.getUserMedia(constraints);
-  handleStream(stream);
-};
-
-
-const handleStream = (stream) => {
-  video.srcObject = stream;
-  play.classList.add('remove');
-  pause.classList.remove('remove');
-  screenshot.classList.remove('remove');
-};
 
 const getCameraSelection = async () => {
   const devices = await navigator.mediaDevices.enumerateDevices();

@@ -29,7 +29,7 @@ const quizs = {
             id: 3,
             isCorrectAnswer: false,
         }
-    ]
+    ],
 }
 
 const handleQuiz = (id) => {
